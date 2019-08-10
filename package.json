@@ -1,0 +1,25 @@
+{
+  "name": "mulit-article-publisher",
+  "version": "1.0.0",
+  "description": "Multi-platform article publisher",
+  "main": "src/index.js",
+  "files": [
+    "src"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "charliemei",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "chrome-cookie": "^1.0.1",
+    "chrome-cookies-secure": "^1.2.0",
+    "markdown-it": "^9.0.1",
+    "marked": "^0.7.0",
+    "node-pre-gyp": "^0.13.0",
+    "qs": "^6.7.0",
+    "sqlite3": "^4.0.9"
+  }
+}
