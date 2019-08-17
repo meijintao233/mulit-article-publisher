@@ -1,6 +1,6 @@
 {
   "name": "mulit-article-publisher",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Multi-platform article publisher",
   "main": "src/index.js",
   "files": [
