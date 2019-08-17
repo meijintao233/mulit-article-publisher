@@ -15,4 +15,21 @@ const mulitArticlePublisher = require("mulit-article-publisher");
 await mulitArticlePublisher(path);
 ```
 
-**Notice：please login first!**
+## Support Platform
+
+- zhihu
+- juejin
+- csdn
+- jianshu
+- toutiao
+- segmentfault
+
+## Support Browser
+
+- Chrome
+
+**Note：please login in support broswer!**
+
+## Support Article Type
+
+- frontend
