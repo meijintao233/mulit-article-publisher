@@ -5,7 +5,10 @@ const marked = require("marked");
 
 const utils = require("../utils");
 module.exports = {
-  toutiaoPublisher: async () => {
+  toutiaoPublisher: async (articlePath) => {
+    if (!articlePath) {
+      return;
+    }
     const readFile = utils.readFile;
     const getCookie = utils.getCookie;
     const cookie = await getCookie("https://mp.toutiao.com/");
@@ -80,7 +83,7 @@ module.exports = {
     formData.title_id = `${Date.now()}_${data.data.data.media.id}`;
 
     //todo:save md
-    const md = await readFile("./src/file.md");
+    const md = await readFile(articlePath);
     const result = /^---\s*title:\s?(.*)\s*(.*:\s?.*\s)*---\s*/.exec(md);
     formData.content = md.replace(result[0], "");
     //掘金根据html直接渲染

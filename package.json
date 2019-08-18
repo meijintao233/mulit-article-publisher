@@ -9,7 +9,21 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "keywords": [
+    "chrome",
+    "cookies",
+    "decrypt",
+    "article",
+    "blog",
+    "wechat",
+    "zhihu",
+    "juejin",
+    "publish",
+    "bytedance",
+    "muiltiple",
+    "jianshu",
+    "markdown"
+  ],
   "author": "charliemei",
   "license": "MIT",
   "repository": {

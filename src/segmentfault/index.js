@@ -8,6 +8,9 @@ const readFile = utils.readFile;
 const getCookie = utils.getCookie;
 module.exports = {
   segmentfaultPublisher: async (articlePath) => {
+    if (!articlePath) {
+      return;
+    }
     const protocol = "https://";
     const base_host = "segmentfault.com/";
     const base_api = "/api";

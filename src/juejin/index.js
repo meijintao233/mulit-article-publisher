@@ -13,6 +13,9 @@ const utils = require("../utils");
  */
 module.exports = {
   juejinPublisher: async (articlePath) => {
+    if (!articlePath) {
+      return;
+    }
     const readFile = utils.readFile;
     const getCookie = utils.getCookie;
     const cookie = await getCookie("https://juejin.im/");

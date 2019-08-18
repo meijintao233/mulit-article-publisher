@@ -6,6 +6,10 @@ const marked = require("marked");
 const utils = require("../utils");
 module.exports = {
   zhihuPublisher: async (articlePath) => {
+    console.log(11);
+    if (!articlePath) {
+      return;
+    }
     const readFile = utils.readFile;
     const getCookie = utils.getCookie;
     const protocol = "https://";

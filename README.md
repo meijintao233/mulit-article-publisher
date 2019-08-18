@@ -6,30 +6,60 @@
 npm i mulit-article-publisher
 ```
 
+---
+
 ## Usage
 
 ```javascript
 const mulitArticlePublisher = require("mulit-article-publisher");
 
-//the argument of the path represent the article path
-await mulitArticlePublisher(path);
+mulitArticlePublisher(options);
 ```
+
+---
+
+## API
+
+- #### mulitArticlePublisher(options)
+
+  ##### options:
+
+  `articlePath` :string --- the article **(.md)** path
+
+  `allPlatfom` :boolean --- whether publish on all platform
+
+  `platform` :Number[] --- specify platform with number
+
+  - 1 - wechat
+  - 2 - toutiao
+  - 3 - zhihu
+  - 4 - juejin
+  - 5 - segmentfault
+  - 6 - jianshu
+  - 7 - csdn
+
+---
 
 ## Support Platform
 
-- zhihu
-- juejin
-- csdn
-- jianshu
-- toutiao
-- segmentfault
+- **wechat(save article in material management at present)**
+- **zhihu**
+- **juejin**
+- **csdn**
+- **jianshu**
+- **toutiao**
+- **segmentfault**
+
+---
 
 ## Support Browser
 
-- Chrome
+- **Chrome**
 
 **Note：please login in support broswer!**
 
-## Support Article Type
+---
 
-- frontend
+## Support Article Category
+
+- **frontend**

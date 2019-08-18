@@ -7,6 +7,9 @@ const utils = require("../utils");
 
 module.exports = {
   csdnPublisher: async (articlePath) => {
+    if (!articlePath) {
+      return;
+    }
     const readFile = utils.readFile;
     const getCookie = utils.getCookie;
     const protocol = "https://";
